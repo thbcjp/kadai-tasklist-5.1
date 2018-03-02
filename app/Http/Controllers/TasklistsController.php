@@ -46,6 +46,9 @@ class TasklistsController extends Controller
      // postでtasklists/にアクセスされた場合の『新規登録処理』
     public function store(Request $request)
     {
+        // バリデーション処理
+        $this->validate($request, ['content' => 'required | max:255']);
+
         $tasklist = new Tasklist;
         $tasklist->content = $request->content;
         $tasklist->save();
@@ -89,6 +92,11 @@ class TasklistsController extends Controller
      // putまたはpatchでtasklists/idにアクセスされた場合の『更新処理』
     public function update(Request $request, $id)
     {
+        // バリデーション処理
+        $this->validate($request, [
+            'content' => 'required | max:255',
+        ]);
+
         $tasklist = Tasklist::find($id);
         $tasklist->content = $request->content;
         $tasklist->save();
