@@ -13,13 +13,13 @@
 
         <div class="row"><!-- START row -->
             
-                <div class="form-group col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-3">
                     {!! Form::label('status', 'ステータス') !!}
                     {!! Form::text('status', null, ['class' => 'form-control']) !!}
                 </div>
             
             
-                <div class="form-group col-xs-12 col-sm-offset-2 col-sm-5 col-md-offset-2 col-md-5 col-lg-offset-3 col-lg-4">
+                <div class="form-group col-xs-12 col-sm-offset-2 col-sm-4 col-md-offset-2 col-md-4 col-lg-offset-3 col-lg-3">
                     {!! Form::label('content', 'タスク') !!}
                     {!! Form::text('content', null, ['class' => 'form-control']) !!}
                 </div>
