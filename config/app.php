@@ -144,7 +144,9 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
         Collective\Html\HtmlServiceProvider::class,      // 藤原 追加
+        Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider::class, // 藤原 追加
 
     ],
 
@@ -193,9 +195,10 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
-        'Form'      => Collective\Html\FormFacade::class,
-        'Html'      => Collective\Html\HtmlFacade::class,
-        
+
+        'Form'      => Collective\Html\FormFacade::class,  // 藤原 追加
+        'Html'      => Collective\Html\HtmlFacade::class,  // 藤原 追加
+        'Gravatar' => Thomaswelton\LaravelGravatar\Facades\Gravatar::class,  // 藤原 追加
 
     ],
 
