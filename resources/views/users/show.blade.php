@@ -14,7 +14,7 @@
         </aside>
         <div class="col-xs-8">
             <ul class="nav nav-tabs nav-justified">
-                <li><a href="#">タスクリスト</li>
+                <li role="presentation"><a href="#">タスクリスト</li>
                 <li><a href="#">フォロー</a></li>
                 <li><a href="#">フォロワー</a></li>
             </ul>
