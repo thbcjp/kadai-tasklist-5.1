@@ -132,7 +132,7 @@ class TasklistsController extends Controller
     {
          if(\Auth::check()){
             $tasklist = Tasklist::find($id);
-            if ($request->user()->id === $tasklist->user_id) {
+            if (\Auth::user()->id === $tasklist->user_id) {
                 return view('tasklists.edit', ['tasklist' => $tasklist,]);
             } else {
                 return redirect('/');
